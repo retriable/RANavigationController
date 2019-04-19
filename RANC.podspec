@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.homepage = 'https://github.com/retriable/RANavigationController'
     spec.author   = { 'retriable' => 'retriable@retriable.com' }
     spec.source   = { :git => 'https://github.com/retriable/RANavigationController.git',:tag => "#{spec.version}" }
-    spec.description = 'navigation controller'
+    spec.description = 'navigation controller.'
     spec.requires_arc = true
     spec.source_files = 'RANC/*.{h,m}'
     spec.ios.framework = 'UIKit'
