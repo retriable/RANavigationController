@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C93215A82269A2EC002EA08B /* RANC.h in Headers */ = {isa = PBXBuildFile; fileRef = C93215A62269A2EC002EA08B /* RANC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA3552269A3FD004BB735 /* UINavigationController+RAPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA3452269A3FC004BB735 /* UINavigationController+RAPrivate.h */; };
+		C9DDA3562269A3FD004BB735 /* UIViewController+RAPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA3462269A3FC004BB735 /* UIViewController+RAPrivate.h */; };
+		C9DDA3572269A3FD004BB735 /* RATransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA3472269A3FC004BB735 /* RATransition.m */; };
+		C9DDA3582269A3FD004BB735 /* RADefaultTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA3482269A3FC004BB735 /* RADefaultTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA35A2269A3FD004BB735 /* RATransition+RAPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA34A2269A3FC004BB735 /* RATransition+RAPrivate.h */; };
+		C9DDA35B2269A3FD004BB735 /* UIViewController+RAPublic.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA34B2269A3FC004BB735 /* UIViewController+RAPublic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA35C2269A3FD004BB735 /* RANavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA34C2269A3FC004BB735 /* RANavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA35D2269A3FD004BB735 /* RANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA34D2269A3FC004BB735 /* RANavigationController.m */; };
+		C9DDA35E2269A3FD004BB735 /* RADefaultTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA34E2269A3FC004BB735 /* RADefaultTransition.m */; };
+		C9DDA35F2269A3FD004BB735 /* NSObject+RAPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA34F2269A3FC004BB735 /* NSObject+RAPrivate.h */; };
+		C9DDA3602269A3FD004BB735 /* RATransition.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA3502269A3FC004BB735 /* RATransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA3612269A3FD004BB735 /* UIViewController+RAPublic.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA3512269A3FC004BB735 /* UIViewController+RAPublic.m */; };
+		C9DDA3622269A3FD004BB735 /* UINavigationController+RAPublic.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDA3522269A3FC004BB735 /* UINavigationController+RAPublic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA3632269A3FD004BB735 /* UINavigationController+RAPublic.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA3532269A3FD004BB735 /* UINavigationController+RAPublic.m */; };
+		C9DDA3642269A3FD004BB735 /* NSObject+RAPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA3542269A3FD004BB735 /* NSObject+RAPrivate.m */; };
+		C9DDA36D2269A90D004BB735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA36C2269A90D004BB735 /* AppDelegate.m */; };
+		C9DDA3702269A90D004BB735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA36F2269A90D004BB735 /* ViewController.m */; };
+		C9DDA3752269A90E004BB735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DDA3742269A90E004BB735 /* Assets.xcassets */; };
+		C9DDA3782269A90E004BB735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DDA3762269A90E004BB735 /* LaunchScreen.storyboard */; };
+		C9DDA37B2269A90E004BB735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDA37A2269A90E004BB735 /* main.m */; };
+		C9DDA37F2269A9A5004BB735 /* RANC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93215A32269A2EC002EA08B /* RANC.framework */; };
+		C9DDA3802269A9A5004BB735 /* RANC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C93215A32269A2EC002EA08B /* RANC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9DDA3812269A9A5004BB735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C932159A2269A2EC002EA08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C93215A22269A2EC002EA08B;
+			remoteInfo = RANC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9DDA3832269A9A5004BB735 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9DDA3802269A9A5004BB735 /* RANC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C93215A32269A2EC002EA08B /* RANC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RANC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93215A62269A2EC002EA08B /* RANC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RANC.h; sourceTree = "<group>"; };
+		C93215A72269A2EC002EA08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DDA3452269A3FC004BB735 /* UINavigationController+RAPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RAPrivate.h"; sourceTree = "<group>"; };
+		C9DDA3462269A3FC004BB735 /* UIViewController+RAPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RAPrivate.h"; sourceTree = "<group>"; };
+		C9DDA3472269A3FC004BB735 /* RATransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATransition.m; sourceTree = "<group>"; };
+		C9DDA3482269A3FC004BB735 /* RADefaultTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADefaultTransition.h; sourceTree = "<group>"; };
+		C9DDA34A2269A3FC004BB735 /* RATransition+RAPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATransition+RAPrivate.h"; sourceTree = "<group>"; };
+		C9DDA34B2269A3FC004BB735 /* UIViewController+RAPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RAPublic.h"; sourceTree = "<group>"; };
+		C9DDA34C2269A3FC004BB735 /* RANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RANavigationController.h; sourceTree = "<group>"; };
+		C9DDA34D2269A3FC004BB735 /* RANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RANavigationController.m; sourceTree = "<group>"; };
+		C9DDA34E2269A3FC004BB735 /* RADefaultTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADefaultTransition.m; sourceTree = "<group>"; };
+		C9DDA34F2269A3FC004BB735 /* NSObject+RAPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RAPrivate.h"; sourceTree = "<group>"; };
+		C9DDA3502269A3FC004BB735 /* RATransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATransition.h; sourceTree = "<group>"; };
+		C9DDA3512269A3FC004BB735 /* UIViewController+RAPublic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RAPublic.m"; sourceTree = "<group>"; };
+		C9DDA3522269A3FC004BB735 /* UINavigationController+RAPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RAPublic.h"; sourceTree = "<group>"; };
+		C9DDA3532269A3FD004BB735 /* UINavigationController+RAPublic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RAPublic.m"; sourceTree = "<group>"; };
+		C9DDA3542269A3FD004BB735 /* NSObject+RAPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RAPrivate.m"; sourceTree = "<group>"; };
+		C9DDA3692269A90D004BB735 /* RANC iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RANC iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DDA36B2269A90D004BB735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9DDA36C2269A90D004BB735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9DDA36E2269A90D004BB735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9DDA36F2269A90D004BB735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9DDA3742269A90E004BB735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9DDA3772269A90E004BB735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9DDA3792269A90E004BB735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DDA37A2269A90E004BB735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9DDA3842269ACF4004BB735 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		C9DDA3852269ACF4004BB735 /* RANC.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RANC.podspec; sourceTree = SOURCE_ROOT; };
+		C9DDA3862269ACF4004BB735 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C9DDA3872269ACF4004BB735 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C93215A02269A2EC002EA08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DDA3662269A90D004BB735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDA37F2269A9A5004BB735 /* RANC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C93215992269A2EC002EA08B = {
+			isa = PBXGroup;
+			children = (
+				C93215A52269A2EC002EA08B /* RANC */,
+				C9DDA36A2269A90D004BB735 /* RANC iOS Example */,
+				C93215A42269A2EC002EA08B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C93215A42269A2EC002EA08B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C93215A32269A2EC002EA08B /* RANC.framework */,
+				C9DDA3692269A90D004BB735 /* RANC iOS Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C93215A52269A2EC002EA08B /* RANC */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDA3872269ACF4004BB735 /* .travis.yml */,
+				C9DDA3842269ACF4004BB735 /* LICENSE */,
+				C9DDA3852269ACF4004BB735 /* RANC.podspec */,
+				C9DDA3862269ACF4004BB735 /* README.md */,
+				C93215A62269A2EC002EA08B /* RANC.h */,
+				C9DDA34C2269A3FC004BB735 /* RANavigationController.h */,
+				C9DDA34D2269A3FC004BB735 /* RANavigationController.m */,
+				C9DDA3482269A3FC004BB735 /* RADefaultTransition.h */,
+				C9DDA34E2269A3FC004BB735 /* RADefaultTransition.m */,
+				C9DDA3502269A3FC004BB735 /* RATransition.h */,
+				C9DDA3472269A3FC004BB735 /* RATransition.m */,
+				C9DDA34A2269A3FC004BB735 /* RATransition+RAPrivate.h */,
+				C9DDA34F2269A3FC004BB735 /* NSObject+RAPrivate.h */,
+				C9DDA3542269A3FD004BB735 /* NSObject+RAPrivate.m */,
+				C9DDA3522269A3FC004BB735 /* UINavigationController+RAPublic.h */,
+				C9DDA3532269A3FD004BB735 /* UINavigationController+RAPublic.m */,
+				C9DDA3452269A3FC004BB735 /* UINavigationController+RAPrivate.h */,
+				C9DDA34B2269A3FC004BB735 /* UIViewController+RAPublic.h */,
+				C9DDA3512269A3FC004BB735 /* UIViewController+RAPublic.m */,
+				C9DDA3462269A3FC004BB735 /* UIViewController+RAPrivate.h */,
+				C93215A72269A2EC002EA08B /* Info.plist */,
+			);
+			path = RANC;
+			sourceTree = "<group>";
+		};
+		C9DDA36A2269A90D004BB735 /* RANC iOS Example */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDA36B2269A90D004BB735 /* AppDelegate.h */,
+				C9DDA36C2269A90D004BB735 /* AppDelegate.m */,
+				C9DDA36E2269A90D004BB735 /* ViewController.h */,
+				C9DDA36F2269A90D004BB735 /* ViewController.m */,
+				C9DDA3742269A90E004BB735 /* Assets.xcassets */,
+				C9DDA3762269A90E004BB735 /* LaunchScreen.storyboard */,
+				C9DDA3792269A90E004BB735 /* Info.plist */,
+				C9DDA37A2269A90E004BB735 /* main.m */,
+			);
+			path = "RANC iOS Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C932159E2269A2EC002EA08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDA3562269A3FD004BB735 /* UIViewController+RAPrivate.h in Headers */,
+				C9DDA35B2269A3FD004BB735 /* UIViewController+RAPublic.h in Headers */,
+				C9DDA35C2269A3FD004BB735 /* RANavigationController.h in Headers */,
+				C9DDA3602269A3FD004BB735 /* RATransition.h in Headers */,
+				C9DDA35A2269A3FD004BB735 /* RATransition+RAPrivate.h in Headers */,
+				C9DDA3582269A3FD004BB735 /* RADefaultTransition.h in Headers */,
+				C9DDA3622269A3FD004BB735 /* UINavigationController+RAPublic.h in Headers */,
+				C9DDA3552269A3FD004BB735 /* UINavigationController+RAPrivate.h in Headers */,
+				C9DDA35F2269A3FD004BB735 /* NSObject+RAPrivate.h in Headers */,
+				C93215A82269A2EC002EA08B /* RANC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C93215A22269A2EC002EA08B /* RANC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93215AB2269A2EC002EA08B /* Build configuration list for PBXNativeTarget "RANC" */;
+			buildPhases = (
+				C932159E2269A2EC002EA08B /* Headers */,
+				C932159F2269A2EC002EA08B /* Sources */,
+				C93215A02269A2EC002EA08B /* Frameworks */,
+				C93215A12269A2EC002EA08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RANC;
+			productName = RANC;
+			productReference = C93215A32269A2EC002EA08B /* RANC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9DDA3682269A90D004BB735 /* RANC iOS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DDA37C2269A90E004BB735 /* Build configuration list for PBXNativeTarget "RANC iOS Example" */;
+			buildPhases = (
+				C9DDA3652269A90D004BB735 /* Sources */,
+				C9DDA3662269A90D004BB735 /* Frameworks */,
+				C9DDA3672269A90D004BB735 /* Resources */,
+				C9DDA3832269A9A5004BB735 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9DDA3822269A9A5004BB735 /* PBXTargetDependency */,
+			);
+			name = "RANC iOS Example";
+			productName = "RANC iOS Example";
+			productReference = C9DDA3692269A90D004BB735 /* RANC iOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C932159A2269A2EC002EA08B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = retriable;
+				TargetAttributes = {
+					C93215A22269A2EC002EA08B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C9DDA3682269A90D004BB735 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C932159D2269A2EC002EA08B /* Build configuration list for PBXProject "RANC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C93215992269A2EC002EA08B;
+			productRefGroup = C93215A42269A2EC002EA08B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C93215A22269A2EC002EA08B /* RANC */,
+				C9DDA3682269A90D004BB735 /* RANC iOS Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C93215A12269A2EC002EA08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DDA3672269A90D004BB735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDA3782269A90E004BB735 /* LaunchScreen.storyboard in Resources */,
+				C9DDA3752269A90E004BB735 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C932159F2269A2EC002EA08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDA3572269A3FD004BB735 /* RATransition.m in Sources */,
+				C9DDA35D2269A3FD004BB735 /* RANavigationController.m in Sources */,
+				C9DDA3632269A3FD004BB735 /* UINavigationController+RAPublic.m in Sources */,
+				C9DDA3642269A3FD004BB735 /* NSObject+RAPrivate.m in Sources */,
+				C9DDA3612269A3FD004BB735 /* UIViewController+RAPublic.m in Sources */,
+				C9DDA35E2269A3FD004BB735 /* RADefaultTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DDA3652269A90D004BB735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDA3702269A90D004BB735 /* ViewController.m in Sources */,
+				C9DDA37B2269A90E004BB735 /* main.m in Sources */,
+				C9DDA36D2269A90D004BB735 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9DDA3822269A9A5004BB735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C93215A22269A2EC002EA08B /* RANC */;
+			targetProxy = C9DDA3812269A9A5004BB735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9DDA3762269A90E004BB735 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DDA3772269A90E004BB735 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C93215A92269A2EC002EA08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C93215AA2269A2EC002EA08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C93215AC2269A2EC002EA08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N4WZ33Z6KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RANC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.retriable.RANC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C93215AD2269A2EC002EA08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N4WZ33Z6KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RANC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.retriable.RANC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9DDA37D2269A90E004BB735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4WZ33Z6KM;
+				INFOPLIST_FILE = "RANC iOS Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.retriable.RANC-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9DDA37E2269A90E004BB735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4WZ33Z6KM;
+				INFOPLIST_FILE = "RANC iOS Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.retriable.RANC-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C932159D2269A2EC002EA08B /* Build configuration list for PBXProject "RANC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93215A92269A2EC002EA08B /* Debug */,
+				C93215AA2269A2EC002EA08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93215AB2269A2EC002EA08B /* Build configuration list for PBXNativeTarget "RANC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93215AC2269A2EC002EA08B /* Debug */,
+				C93215AD2269A2EC002EA08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DDA37C2269A90E004BB735 /* Build configuration list for PBXNativeTarget "RANC iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DDA37D2269A90E004BB735 /* Debug */,
+				C9DDA37E2269A90E004BB735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C932159A2269A2EC002EA08B /* Project object */;
+}
