@@ -141,9 +141,18 @@
     return [self.topViewController preferredInterfaceOrientationForPresentation];
 }
 
+- (void)ra_pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (!self.ra_navigationController){
+        [self ra_pushViewController:viewController animated:animated];
+    }
+    NSAssert(0, @"disabled call");
+    [self ra_pushViewController:viewController animated:animated];
+}
+
 + (void)load{
     [self ra_swizzleinstanceWithOrignalMethod:@selector(navigationBar:shouldPopItem:) alteredMethod:@selector(ra_navigationBar:shouldPopItem:)];
     [self ra_swizzleinstanceWithOrignalMethod:@selector(setViewControllers:animated:) alteredMethod:@selector(ra_setViewControllers:animated:)];
+    [self ra_swizzleinstanceWithOrignalMethod:@selector(pushViewController:animated:) alteredMethod:@selector(ra_pushViewController:animated:)];
     [self ra_swizzleinstanceWithOrignalMethod:@selector(popViewControllerAnimated:) alteredMethod:@selector(ra_popViewControllerAnimated:)];
     [self ra_swizzleinstanceWithOrignalMethod:@selector(popToRootViewControllerAnimated:) alteredMethod:@selector(ra_popToRootViewControllerAnimated:)];
     [self ra_swizzleinstanceWithOrignalMethod:@selector(popToViewController:animated:) alteredMethod:@selector(ra_popToViewController:animated:)];
