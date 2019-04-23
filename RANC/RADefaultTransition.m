@@ -30,6 +30,7 @@
     RATransitioningState state=self.state;
     CATransform3D from=transitionView.layer.transform,to;
     void(^enableShadow)(UIView *v)=^(UIView *v){
+        v.layer.shadowPath =[UIBezierPath bezierPathWithRect:v.bounds].CGPath;
         v.layer.shadowColor=[UIColor blackColor].CGColor;
         v.layer.shadowOffset=CGSizeMake(-8, 0);
         v.layer.shadowRadius=8;
