@@ -29,10 +29,10 @@
     RATransitioningAction action=self.action;
     RATransitioningState state=self.state;
     CATransform3D from=transitionView.layer.transform,to;
-    void(^enableShadow)(UIView *v)=^(UIView *v){
+    void(^enableShadow)(UIView *v,RADefaultTransitionType type)=^(UIView *v,RADefaultTransitionType type){
         v.layer.shadowPath =[UIBezierPath bezierPathWithRect:v.bounds].CGPath;
         v.layer.shadowColor=[UIColor blackColor].CGColor;
-        v.layer.shadowOffset=CGSizeMake(-8, 0);
+        v.layer.shadowOffset=CGSizeMake(type==RADefaultTransitionPush?-8:0, type==RADefaultTransitionPush?0:-8);
         v.layer.shadowRadius=8;
         v.layer.shadowOpacity=0.5;
     };
@@ -63,7 +63,7 @@
                         }
                     }
                 }
-                    enableShadow(transitionView);
+                    enableShadow(transitionView,self.type);
                     break;
                 case RATransitioningBackground:
                     to=CATransform3DScale(CATransform3DIdentity, 0.985, 0.985, 1);
@@ -81,7 +81,7 @@
             switch (state) {
                 case RATransitioningInvisible:
                     to=self.type==RADefaultTransitionPush?CATransform3DTranslate(CATransform3DIdentity, CGRectGetWidth(containerView.bounds), 0, 0):CATransform3DTranslate(CATransform3DIdentity, 0, CGRectGetHeight(containerView.bounds), 0);
-                    enableShadow(transitionView);
+                    enableShadow(transitionView,self.type);
                     break;
                 case RATransitioningForeground:
                     to=CATransform3DIdentity;
@@ -95,7 +95,7 @@
                     break;
                 case RATransitioningBackground:
                     to=CATransform3DScale(CATransform3DIdentity, 0.985, 0.985, 1);
-                    enableShadow(transitionView);
+                    enableShadow(transitionView,self.type);
                     break;
             }
         }break;
