@@ -39,7 +39,7 @@
 - (instancetype)initWithRootViewController:(__kindof UIViewController *)rootViewController{
     self=[self init];
     if (!self) return nil;
-    [self pushViewController:rootViewController];
+    [self pushViewController:rootViewController animated:NO];
     return self;
 }
 
