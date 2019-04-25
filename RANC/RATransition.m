@@ -129,6 +129,7 @@
     [self animate];
     if (self.action==RATransitioningPop){
         [self _fixNavigationBarPosition];
+        [self _fixStatusBarStyle];
     }
 }
 
@@ -165,6 +166,10 @@
     BOOL navigationBarHidden=navigationController.navigationBarHidden;
     navigationController.navigationBarHidden=!navigationBarHidden;
     navigationController.navigationBarHidden=navigationBarHidden;
+}
+
+- (void)_fixStatusBarStyle{
+    [self.containerViewController setNeedsStatusBarAppearanceUpdate];
 }
 
 - (BOOL)cancelled{
