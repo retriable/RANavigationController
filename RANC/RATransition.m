@@ -1,10 +1,10 @@
-//
-//  RATransition.m
-//  RANC
-//
-//  Created by retriable on 2019/4/19.
-//  Copyright © 2019 retriable. All rights reserved.
-//
+    //
+    //  RATransition.m
+    //  RANC
+    //
+    //  Created by retriable on 2019/4/19.
+    //  Copyright © 2019 retriable. All rights reserved.
+    //
 
 #import <objc/runtime.h>
 
@@ -73,7 +73,7 @@
         transitionView.frame=self.initialFrame;
         transitionView.transform=self.initialAffineTransform;
         transitionView.layer.transform=self.initialThreeDTransform;
-       
+        
     }
     self.completionBlock();
 }
@@ -129,7 +129,6 @@
     [self animate];
     if (self.action==RATransitioningPop){
         [self _fixNavigationBarPosition];
-        [self _fixStatusBarStyle];
     }
 }
 
@@ -166,10 +165,6 @@
     BOOL navigationBarHidden=navigationController.navigationBarHidden;
     navigationController.navigationBarHidden=!navigationBarHidden;
     navigationController.navigationBarHidden=navigationBarHidden;
-}
-
-- (void)_fixStatusBarStyle{
-    [self.containerViewController setNeedsStatusBarAppearanceUpdate];
 }
 
 - (BOOL)cancelled{

@@ -1,10 +1,10 @@
-//
-//  RANavigationController.m
-//  RANC
-//
-//  Created by retriable on 2019/4/19.
-//  Copyright © 2019 retriable. All rights reserved.
-//
+    //
+    //  RANavigationController.m
+    //  RANC
+    //
+    //  Created by retriable on 2019/4/19.
+    //  Copyright © 2019 retriable. All rights reserved.
+    //
 
 #import <objc/message.h>
 
@@ -208,6 +208,7 @@
 }
 
 - (void)_pushViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers increasing:(BOOL)increasing animated:(BOOL)animated completion:(void(^_Nullable)(void))completion{
+    __weak typeof(self) weakSelf=self;
     NSMutableArray<void(^)(void)> *completions=[NSMutableArray array];
     NSMutableArray<void(^)(void)> *cancels=[NSMutableArray array];
     dispatch_group_t group=dispatch_group_create();
@@ -260,11 +261,16 @@
     for (NSInteger i=viewControllers.count-1;i>=0;i--){
         UIViewController *viewController=viewControllers[i];
         if (viewController.ra_defineRotationContext){
+            UIViewController *activedViewController=self.activedViewController;
             self.activedViewController=viewController;
+            [completions addObject:^{
+                if (cancelled){
+                    weakSelf.activedViewController=activedViewController;
+                }
+            }];
             break;
         }
     }
-    __weak typeof(self) weakSelf=self;
     for (NSInteger i=0,count=navigationControllers.count;i<count;i++){
         __weak UINavigationController *navigationController=navigationControllers[i];
         if (visableFlags[i]) {
@@ -366,6 +372,7 @@
 }
 
 - (nullable NSArray<__kindof UIViewController *> *)_popToViewController:(UIViewController *)viewController animated:(BOOL)animated completion:(void(^_Nullable)(void))completion{
+    __weak typeof(self) weakSelf=self;
     NSMutableArray<void(^)(void)> *completions=[NSMutableArray array];
     NSMutableArray<void(^)(void)> *cancels=[NSMutableArray array];
     dispatch_group_t group=dispatch_group_create();
@@ -399,11 +406,16 @@
     for (NSInteger i=index;i>=0;i--){
         UIViewController *viewController=self.viewControllers[i];
         if (viewController.ra_defineRotationContext){
+            UIViewController *activedViewController=self.activedViewController;
             self.activedViewController=viewController;
+            [completions addObject:^{
+                if (cancelled){
+                    weakSelf.activedViewController=activedViewController;
+                }
+            }];
             break;
         }
     }
-    __weak typeof(self) weakSelf=self;
     for (NSInteger count=navigationControllers.count-1,i=count;i>=0;i--){
         visableFlags[i]=NO;
         if (i==index) visableFlags[i]=YES;
@@ -487,7 +499,7 @@
             }
         }
     }
-
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -547,7 +559,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     for (UIViewController *viewController in self.childViewControllers){
-       [viewController endAppearanceTransition];
+        [viewController endAppearanceTransition];
     }
     [super viewDidAppear:animated];
 }
@@ -555,13 +567,13 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     for (UIViewController *viewController in self.childViewControllers){
-         [viewController beginAppearanceTransition:NO animated:animated];
+        [viewController beginAppearanceTransition:NO animated:animated];
     }
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
     for (UIViewController *viewController in self.childViewControllers){
-       [viewController endAppearanceTransition];
+        [viewController endAppearanceTransition];
     }
     [super viewDidDisappear:animated];
 }
@@ -570,6 +582,13 @@
 - (void)ra_addChildViewController:(UIViewController *)childController{
     NSAssert(0, @"Do not call this method directly");
     return;
+}
+
+- (void)setActivedViewController:(UIViewController *)activedViewController{
+    if (_activedViewController==activedViewController) return;
+    _activedViewController=activedViewController;
+    [self setNeedsStatusBarAppearanceUpdate];
+    [UIViewController attemptRotationToDeviceOrientation];
 }
 
 - (BOOL)shouldAutorotate{
