@@ -20,12 +20,9 @@ typedef NS_ENUM(NSInteger,RADefaultTransitionType) {
 /**
  transition type.default: RADefaultTransitionPush.
  */
-@property (nonatomic,assign)RADefaultTransitionType type;
+@property (nonatomic,assign  ) RADefaultTransitionType type;
 
-/**
- interaction pop enabled.default: YES.
- */
-@property (nonatomic,assign)BOOL                    popInteractionEnabled;
+@property (readonly          ) UIPanGestureRecognizer  *panGestureRecognizer;
 
 @end
 

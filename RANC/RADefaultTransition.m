@@ -16,12 +16,7 @@
 @end
 
 @implementation RADefaultTransition
-- (instancetype)init{
-    self=[super init];
-    if (!self) return nil;
-    self.popInteractionEnabled=YES;
-    return self;
-}
+
 - (void)animate{
     UIView *containerView=self.containerViewController.view;
     UIView *transitionView=self.viewController.view;
@@ -56,11 +51,9 @@
                     from=self.type==RADefaultTransitionPush?CATransform3DTranslate(CATransform3DIdentity, CGRectGetWidth(containerView.bounds), 0, 0):CATransform3DTranslate(CATransform3DIdentity,0, CGRectGetHeight(containerView.bounds), 0);
                     to=CATransform3DIdentity;
                 {
-                    if (self.popInteractionEnabled){
-                        if (self.panGestureRecogniner.view!=transitionView){
-                            [self.panGestureRecogniner.view removeGestureRecognizer:self.panGestureRecogniner];
-                            [transitionView addGestureRecognizer:self.panGestureRecogniner];
-                        }
+                    if (self.panGestureRecogniner.view!=transitionView){
+                        [self.panGestureRecogniner.view removeGestureRecognizer:self.panGestureRecogniner];
+                        [transitionView addGestureRecognizer:self.panGestureRecogniner];
                     }
                 }
                     enableShadow(transitionView,self.type);
@@ -112,11 +105,11 @@
     }];
 }
 
-- (void)pan:(UIPanGestureRecognizer*)gesture{
-    UIView *superview=gesture.view.superview;
-    CGPoint point=[gesture locationInView:superview];
-    CGPoint velocity=[gesture velocityInView:superview];
-    switch (gesture.state) {
+- (void)pan:(UIPanGestureRecognizer*)gestureRecognizer{
+    UIView *superview=gestureRecognizer.view.superview;
+    CGPoint point=[gestureRecognizer locationInView:superview];
+    CGPoint velocity=[gestureRecognizer velocityInView:superview];
+    switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan:
             
             if (self.type==RADefaultTransitionPush){
@@ -160,4 +153,5 @@
     _panGestureRecogniner=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
     return _panGestureRecogniner;
 }
+
 @end
