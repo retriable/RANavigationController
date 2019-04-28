@@ -1,16 +1,16 @@
-//
-//  RADefaultTransition.m
-//  RANC
-//
-//  Created by retriable on 2019/4/19.
-//  Copyright © 2019 retriable. All rights reserved.
-//
+    //
+    //  RADefaultTransition.m
+    //  RANC
+    //
+    //  Created by retriable on 2019/4/19.
+    //  Copyright © 2019 retriable. All rights reserved.
+    //
 
 #import "RADefaultTransition.h"
 
 @interface RADefaultTransition()
 
-@property(nonatomic,strong) UIPanGestureRecognizer *panGestureRecogniner;
+@property(nonatomic,strong) UIPanGestureRecognizer *panGestureRecognizer;
 @property(nonatomic,assign) CGPoint                startPoint;
 
 @end
@@ -51,10 +51,10 @@
                     from=self.type==RADefaultTransitionPush?CATransform3DTranslate(CATransform3DIdentity, CGRectGetWidth(containerView.bounds), 0, 0):CATransform3DTranslate(CATransform3DIdentity,0, CGRectGetHeight(containerView.bounds), 0);
                     to=CATransform3DIdentity;
                 {
-                    if (self.panGestureRecogniner.view!=transitionView){
-                        [self.panGestureRecogniner.view removeGestureRecognizer:self.panGestureRecogniner];
-                        [transitionView addGestureRecognizer:self.panGestureRecogniner];
-                    }
+                if (self.panGestureRecognizer.view!=transitionView){
+                    [self.panGestureRecognizer.view removeGestureRecognizer:self.panGestureRecognizer];
+                    [transitionView addGestureRecognizer:self.panGestureRecognizer];
+                }
                 }
                     enableShadow(transitionView,self.type);
                     break;
@@ -148,10 +148,10 @@
     }
 }
 
-- (UIPanGestureRecognizer*)panGestureRecogniner{
-    if (_panGestureRecogniner) return _panGestureRecogniner;
-    _panGestureRecogniner=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
-    return _panGestureRecogniner;
+- (UIPanGestureRecognizer*)panGestureRecognizer{
+    if (_panGestureRecognizer) return _panGestureRecognizer;
+    _panGestureRecognizer=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
+    return _panGestureRecognizer;
 }
 
 @end
