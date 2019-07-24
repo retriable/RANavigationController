@@ -144,6 +144,7 @@
 - (void)ra_pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (!self.ra_navigationController){
         [self ra_pushViewController:viewController animated:animated];
+        return;
     }
     NSAssert(0, @"disabled call");
     [self ra_pushViewController:viewController animated:animated];
